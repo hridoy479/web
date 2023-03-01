@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="st.css">
+    <link rel="stylesheet" href="HTML/style.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#"><img src="hr.png" alt="widt"></a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="project.html">Porject</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Placement</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="Login.html" class="action_btn">Log In</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="contact.html">contact us</a></li>
+            <li><a href="project.html">Porject</a></li>
+            <li><a href="Login.html" class="action_btn">Log In</a></li>
+        </div>
+    </header>
+    <section class="gari">
+     <div>
+        <button id="playPauseBTN" onclick="playPause()">playmusic &#9658</button>
+        <button onclick="stop()">Stop music &#9611</button>
+        
+        </div>
+        <div class="night">
+            <div class="surface"></div>
+            <div class="car">
+                <img src="HTML/assets/Img_06.png" alt="">
+            </div>
+        </div>
+    </section>
+        <div>
+            
+            <audio id="audio">
+                <source src="sound.mp3" type="audio/mpeg">
+            </audio>
+
+
+        </div>
+        <script src="script.js"></script>
+        <script src="bar.js">
+       
+        </script>
+</body>
+</html>
