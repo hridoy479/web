@@ -71,35 +71,21 @@
 .content{
     width:100%;
     height: 700px;
-
+    position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
 }
-.content{
-
-    background-image: url('/image/img1.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    background-attachment: fixed;
-    transition: 2s;
-
-    animation-name: ur;
-    animation-duration: 20s;
-    animation-direction: alternate-reverse;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-timing-function: ease-in-out;
+.content img{
+    position: absolute;
+    width:100%;
+    height: auto;
 }
-@keyframes ur{
-    0%{background-image: url('/image/img2.jpg');}
-    50%{background-image: url('/image/img3.jpg');}
-    75%{background-image: url('/image/img4.jpg');}
-    100%{background-image: url('/image/img1.jpg');}
+.content .bd{
+    position: absolute;
 }
+
 @media (max-width:1400px){
     .content{
         background-size: cover;
